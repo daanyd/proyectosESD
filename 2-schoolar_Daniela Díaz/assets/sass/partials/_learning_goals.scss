@@ -1,0 +1,150 @@
+.learning_resources {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    border-right: solid 1.5px #F7F7F9;
+    
+
+    .learning {
+        .learning_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .learning_top_left {
+                display: flex;
+                padding: 8px;
+                gap: 12px;
+                align-items: center;
+                .learning_title {
+                    padding: 8px;
+                    @include font_title_md;
+                }
+                .learning_number {
+                    display: flex;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 9999px;
+                    background-color: #366CD9;
+                    align-items: center;
+                    @include font_body_sm_white;
+                    justify-content: center;
+                }
+            }
+            .button {
+            }
+        }
+        .learning_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .learning_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px;
+                .learning_item_left {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    img {
+                        width: 44px;
+                    }
+                    .label {
+                        @include font_body_bold;
+                    }
+                }
+                .chevron {
+                }
+            }
+        }
+    }
+    .resources {
+        .resources_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: solid 1.5px #F7F7F9;
+        padding-top: 20px;
+            .resources_top_left {
+                display: flex;
+                padding: 8px;
+                gap: 12px;
+                align-items: center;
+                .resources_title {
+                    padding: 8px;
+                    @include font_title_md;
+                }
+                .resources_number {
+                    display: flex;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 9999px;
+                    background-color: #366CD9;
+                    align-items: center;
+                    @include font_body_sm_white;
+                    justify-content: center;
+                }
+            }
+            .button {
+            }
+        }
+        .resources_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .resources_bottom_item_1 {
+                display: flex;
+                gap: 12px;
+                padding: 12px;
+
+                .cover_1 {
+                    flex-shrink: 0;
+                    align-items: center;
+                    padding: 8px 12px 5px 12px;
+                    background-color: #e7e1ed;
+                    border-radius: 8px;
+
+                    img {
+                        width: 26px;
+                        width: 36px;
+                    }
+                }
+                .book_item {
+                    .book_title {
+                        @include font_body_bold;
+                    }
+                    .book_class {
+                        @include font_body_regular;
+                    }
+                }
+            }
+            .resources_bottom_item_2 {
+                display: flex;
+                gap: 12px;
+                padding: 12px;
+
+                .cover_2 {
+                    flex-shrink: 0;
+                    align-items: center;
+                    padding: 8px 12px 5px 12px;
+                    background-color: #e5eafd;
+                    border-radius: 8px;
+
+                    img {
+                        width: 26px;
+                        width: 36px;
+                    }
+                }
+                .book_item {
+                    .book_title {
+                        @include font_body_bold;
+                    }
+                    .book_class {
+                        @include font_body_regular;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.payments{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 50px;
+    .payments_top{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .payments_header{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            align-items: center;
+            .payments_title{
+                @include font_title_md;
+            }
+            .button{}
+        }
+        .payments_time{
+            display: flex;
+            justify-content: center;
+            padding: 8px;
+            .payments_time_button{
+                display: flex;
+                border-radius: 8px;
+                width: 300px;
+                .payments_label{
+                    display: flex;
+                    width: 50%;
+                    justify-content: center;
+                    border-radius:8px 0 0 8px ;
+                    border: 1px solid #E9EAEF;
+                    align-items: center;
+                    font-weight: 300;
+                }
+                .payments_label_1{
+                    display: flex;
+                    width: 50%;
+                    justify-content: center;
+                    background-color: black;
+                    border-radius: 0 8px 8px 0;
+                    padding: 8px;
+                    align-content: center;
+                    color: #ffffff;
+                    font-weight: 300;
+                }
+            }
+        }
+        .payments_quantity{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .quantity_left{
+                display: flex;
+                flex-direction: column;
+
+                gap: 12px;
+                .quantity_top{
+                    display: flex;
+                    .quantity_bold{
+                        @include font_number_lg;
+                    }
+                    .quantity_grey{
+                        @include font_number_grey;
+                    }
+                }
+                .quantity_bottom{
+                    @include font_body_regular;
+                }
+            }
+            .quantity_right{
+                img{
+                    width: 70px;
+                }
+            }
+        }
+    }
+    .payments_bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .payments_bottom_title{
+            @include font_body_bold;
+        }
+        .invoices_content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .invoices_entries{
+                display: flex;
+                justify-content: space-between;
+                .entry_left{
+                    display: flex;
+                    gap:16px;
+                    .entry_cover{
+                        position: relative;
+                        .doc_icon{
+                            width: 39px;
+                            border-radius: 4px;
+                            padding: 2px;
+                            background-color: #F6F7FC;
+                        }
+                        .check{
+                            color:#78C976;
+                            position: absolute;
+                            top: -8px;
+                            left: 30px;
+                            width: 0px;
+                            height: 0px;
+                        }                  
+                    }
+                    .entry_item{
+                        .invoice_tittle{
+                            @include font_body_bold;
+                        }
+                        .invoice_date{
+                            @include font_body_regular;
+                        }
+                    }
+                }
+                .entry_right{}
+            }
+        }
+    }
+}

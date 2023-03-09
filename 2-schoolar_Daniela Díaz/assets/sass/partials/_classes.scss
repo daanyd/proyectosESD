@@ -1,0 +1,211 @@
+.classes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    .classes_top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .classes_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .classes_name {
+                @include font_title_md;
+            }
+            .button {
+            }
+        }
+        .classes_months {
+            display: flex;
+            justify-content: space-between;
+            .classes_icon {
+            }
+            .month_au {
+                @include font_body_regular;
+            }
+            .month_sep {
+                @include font_body_regular;
+            }
+        }
+        .classes_days {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width:390px){
+                display: flex;
+                justify-content: space-between;
+                overflow: auto;
+                gap: 8px;
+                
+            }
+            
+            .classes_days_item {
+                display: flex;
+                padding: 8px;
+                border-radius: 9999px;
+                @include font_number_black;
+                height: 32px;
+                width: 32px;
+                align-items: center;
+                justify-content: center;
+                &.active{
+                    background-color: #366CD9;
+                    color: white;
+                }
+            &.mark {
+                border: 1px solid #ECEEF2;
+
+                
+            }
+            }
+        }
+    }
+    .classes_bottom {
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+        
+        .classes_event_01 {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            width: 388px;
+            height: 204px;
+            justify-content: space-between;
+            padding: 12px;
+            background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.6)
+                ),
+                url(/assets/img/women-gc720db898_1920.jpg);
+            background-size: cover;
+            background-position: center;
+            @media screen and (max-width:390px){
+                width: 348px;
+                
+            }
+            
+
+            .event_top {
+                display: flex;
+                justify-content: space-between;
+                .event_top_left {
+                    .event_name {
+                        @include font_body_md_white;
+                    }
+                    .event_tag {
+                        @include font_body_sm_white;
+                    }
+                }
+                .event_top_right {
+                    .event_status {
+                        @include font_body_sm_white;
+                        background-color: #366CD9;
+                        border-radius: 9999px;
+                        padding: 8px;
+                    }
+                }
+            }
+            .event_bottom {
+                display: flex;
+                .event_bottom_label {
+                    @include font_body_sm_white;
+                }
+                .event_bottom_icon {
+                    @include font_body_sm_white;
+                }
+            }
+        }
+        .classes_event_02 {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            width: 388px;
+            height: 204px;
+            justify-content: space-between;
+            padding: 12px;
+            background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.6)
+                ),
+                url(/assets/img/airport-g9995de979_1920.jpg);
+            background-position: center;
+            @media screen and (max-width:390px){
+                width: 348px;
+                
+            }
+
+            .event_top {
+                display: flex;
+                justify-content: space-between;
+                .event_top_left {
+                    .event_name {
+                        @include font_body_md_white;
+                    }
+                    .event_tag {
+                        @include font_body_sm_white;
+                    }
+                }
+                .event_top_right {
+                    .event_status {
+                    }
+                }
+            }
+            .event_bottom {
+                display: flex;
+                .event_bottom_label {
+                    @include font_body_sm_white;
+                }
+                .event_bottom_icon {
+                    @include font_body_sm_white;
+                }
+            }
+        }
+        .classes_event_03 {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            width: 388px;
+            height: 204px;
+            justify-content: space-between;
+            padding: 12px;
+            background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.6)
+                ),
+                url(/assets/img/sparkler-g9eb50f6ce_1920.jpg);
+            background-position: center;
+            @media screen and (max-width:390px){
+                width: 348px;
+                
+            }
+
+            .event_top {
+                display: flex;
+                justify-content: space-between;
+                .event_top_left {
+                    .event_name {
+                        @include font_body_md_white;
+                    }
+                    .event_tag {
+                        @include font_body_sm_white;
+                    }
+                }
+                .event_top_right {
+                    .event_status {
+                    }
+                }
+            }
+            .event_bottom {
+                display: flex;
+                .event_bottom_label {
+                    @include font_body_sm_white;
+                }
+                .event_bottom_icon {
+                    @include font_body_sm_white;
+                }
+            }
+        }
+    }
+}
